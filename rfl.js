@@ -3652,7 +3652,7 @@ mentionedJid: parseMention(lol), externalAdReply: {
   title: `𝘏𝘌𝘓𝘓𝘖 ${pushname} `,
   body: `${ucapanWaktu} Semoga harimu menyenangkan`,
   mediaType: 2,
-  mediaUrl: "https://youtu.be/5DXNC4_Bj_U",
+  mediaUrl: "https://youtu.be/2mePn_rmIXE",
   thumbnail: fs.readFileSync('./gambar/menu.jpg'),
 }, forwardingScore: 508, isForwarded: false, mentionedJid: [Tag + '@s.whatsapp.net', senderr]
     }
@@ -5195,7 +5195,8 @@ for (var x in get_result) {
 ini_txt += `${x}. ${get_result[x]}\n`
 }
 reply(ini_txt)
-break
+break
+
 //=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×=×			
 //QuotesMenu
 case 'bucin1':
@@ -5262,7 +5263,8 @@ break
 case 'wallpaperanime':            
              buffer = await getBuffer(`http://api.lolhuman.xyz/api/random2/wallpaper?apikey=${lolkey}`)
              rfl.sendMessage(from, buffer, image, { quoted: mek, caption: 'Done kak, Jangan lupa subscribe yt RflBotzz'})   
-break
+break
+
 //=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×==×=×=×=×=×=×=×=×=×=×			
 //InformationMenu
 case 'covidglobal':
@@ -5340,7 +5342,8 @@ case 'ktpmaker':
 case 'namarandom':
 namerandom = await fetchJson(`https://api.lolhuman.xyz/api/random/nama?apikey=${lolkey}`)
 reply(namerandom.result)
-break
+break
+
 case 'suit':
 if (args.length < 1) return reply('Pilih gunting/batu/kertas')
 if (args[0] === 'gunting' ) {
@@ -5389,7 +5392,8 @@ case 'tagme':
 var nomqm = mek.participant
 tagu = `@${nomqm.split('@s.whatsapp.net')[0]}`
 rfl.sendMessage(from, tagu, text, { quoted: flexx, contextInfo: { forwardingScore: 508, isForwarded: true, mentionedJid: [nomqm]}})
-break
+break
+
 case 'caripesan':
 if (args.length < 1) return reply(`Penggunaan ${prefix}caripesan Hi|15`)
 tekse = args.join('')
